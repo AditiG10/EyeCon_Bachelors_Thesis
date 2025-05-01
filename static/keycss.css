@@ -1,0 +1,191 @@
+*
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.keyframe
+{
+    background-color: skyblue;
+    padding:40px;
+    
+}
+
+.buttons
+{
+    list-style-type: none;
+    display: inline-block;
+    border:2px solid black;
+    padding:10px ;
+    background-color: black;
+    color:white;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: 800;
+    font-size:20;
+}
+
+#spacebar
+{
+    width:90%;
+    background: white;
+    margin-left: 40px;
+    border-radius: 15px;
+    list-style-type: none;
+    padding:25px;
+}
+
+/*lightgoldenrodyellow*/
+#spacebar:hover
+{
+    background-color:lightblue; 
+    transition: 1s;
+}
+
+.screen {
+   
+    z-index: 10;
+    background-color:lightblue; /*navajowhite*/
+    font-family: sans-serif;
+    font-size: 80px;
+    width:100%;
+    
+    color:white;
+     
+    }
+.screen p {
+	text-align: center;
+}
+
+.display
+{
+    background-color:#0B0F64;
+    border-color: 050732;
+    margin:0px;
+    padding:0px;
+    font-size:15px;
+    border-radius: 2px;
+   
+    height:250px;
+    
+}
+
+.keyboard {
+	border:2px solid white;
+    width:600px;  
+    background-color: black;
+   
+    padding-top:5px;
+    padding-left: 70px;
+    margin-left:45%;
+    border-radius: 25px;
+    
+}
+
+.show {
+     margin-right:70px;
+    margin-left:40px;
+     border-color: cornsilk;      
+     background-color:#060837;
+      height: 170px;
+      color:white;
+      font-family: sans-serif;
+      font-size: 20px;
+    overflow-y: scroll;
+        
+   }
+.display1 
+    {
+        color:black;
+        font-size:60px;
+        padding:20px;
+        position: relative;
+        top:60px;
+    }
+
+
+.typewriter p  {
+  text-align: left;
+  /*overflow:visible;*//* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+
+  margin-right:10px; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(60, end), blink-caret .65s step-end ;
+    /*typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;*/
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.lights {
+	text-align:right;
+    color:white;
+    padding-right: 10%;
+}
+
+.light1 {
+    margin:5px;
+    border:2px solid white;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.logo {
+	font-size: 70px;
+    color:white;
+   position:absolute;
+    left:850px;
+    text-align:right;
+  top:4px;
+    padding:9px;
+    border:2px dotted white;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color:#0B0F64;
+     -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+    
+}
+.rabin {
+	 margin-top:20px;
+}
+
+
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html>
+ <head>
+  <title>
+   EyeCon  
+  </title>
+  <style>
+      .navbar-custom {
+    background-color: #162469;
+    }
+  </style>    
+     <script src="../static/bootstrap.min.js">
+     </script>
+    <script src="../static/jquery-3.3.1.min.js">
+     </script>
+     <link rel="shortcut icon" type="image/x-icon" href="../static/th.jpg">
+     <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/footer.css')}}"></link>
+
+     <link rel="stylesheet"  href="../static/keycss.css">  <!-- F:/Docs/PROJECTS/EyeCon/Codes/blinkToText-master/static/keycss.css -->
+    <script src="../static/lado2.js">
+     //  <script src="F:/Docs/PROJECTS/EyeCon/Codes/blinkToText-master/static/lado1.js.js"> 
+     </script>
+</head>
+
+  <body>
+    
+<!-- Navbar Code -->
+<div class="header sticky-top">
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+    <a class="navbar-brand" href="index.html"><img src="{{url_for('static', filename='Logo5.png')}}" height="55" width="120"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <a class="nav-link" href="{{url_for('index')}}">Home</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="{{url_for('index1')}}">EyeBlink Panel</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="{{url_for('guide')}}">Guide</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+  </div>
+
+
+
+      <b><h1 style="text-align: center;font-family:Algerian;color:#0B0F64">EyeCon Eyeblink Interface</h1></b>
+       <div class="container-fluid">
+         
+           
+        
+        <div class="row screen">
+           
+            <div class="col-sm-4 display1 ">
+             <p id="input"></p>
+            <!--  <a href="{{url_for('detect_blinks')}}">Launch Interface</a> -->
+               
+            </div>
+            
+            <div class="col-sm-8 display">
+                <div class="typewriter">
+  <h3 style="text-align: center;font-size:120%">Output Screen</h3>
+</div>
+        
+                 <div class=" show typewriter">
+                <p id="final"></p>
+                </div>
+                
+               <div  align ="center"><button class="btn btn-primary" type="submit" onclick="textToAudio()">Speak</button></div>
+               <!-- <a href="{{url_for('detect_blinks')}}">Launch Interface</a> -->
+               <!-- <div  align ="center"><button class="btn btn-primary" onclick="home()" id='script' name="submit" value="Run Script"  >Activate</button></div> -->
+        <br/>
+        <!--<div><small><b>NOTE:</b> Enter text and click on speak button.</small></div>-->
+               
+            </div>
+            
+        </div>
+
+        
+           
+             <div class="row">
+            <!-- <form  method = "post">
+     <input type="button" id='script' name="submit" value="Run Script">
+    </form> -->
+
+
+             <div class="col-sm-12 keyframe ">
+                   
+                 
+           <div class="keyboard">
+              
+               <div >
+                   <i><span class="logo" align="right" style="font-size:70%;text-align:right">
+                     EyeCon Key Board
+                   </span></i>
+                   <!-- <span class="light1">C</span> -->                
+               </div>
+                  
+               <div class="rabin">
+                   <ul class="keys">
+                   </ul>
+               </div>
+         </div>
+              
+            </div>
+                 
+                </div> 
+           
+           
+             
+             
+             
+             </div>
+      <br>
+      <br>
+     <!--  <a href="{{url_for('detect_blinks')}}">Launch Interface</a>
+      <div class="col-md-12 text-center">
+      <form action="{{url_for('detect_blinks')}}"> method="post"
+    <input style="padding: 25px;font-size: 30px;" type="submit" class="btn btn-warning" value="Activate the EyeCon Panel" />
+</form></div> -->
+<div class="col-md-12 text-center">
+<a href="{{url_for('detect_blinks')}}"><input type="button" style="padding:25px;font-size:30px;" class="btn btn-warning" value="Activate the EyeCon Panel"></a> 
+</div>
+ <br>
+<br>
+<div class="container">
+        <div class="col-md-8 offset-md-2">
+            <h5 class="page-intro text-center ">Welcome to EyeCon Eyeblink Interface! In case you need help with the navigation/working of our panel, please check the <a href="{{url_for('guide')}}">User Instructions</a>.
+</h5>
+<br><br>
+        </div>    
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Footer Code -->
+<footer class="footer-design">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="siteinfo">
+          <h3>EyeCon-The Speaker for Paralysed
+          <a href="#"></a>
+          </h3>
+        </div><br>
+        <div class="footer-menu">
+          <ul>
+            <li>
+              <a href="{{url_for('index')}}">HOME -</a>             
+              <a href="{{url_for('index1')}}">EYEBLINK PANEL -</a>
+              <a href="{{url_for('contact')}}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+  

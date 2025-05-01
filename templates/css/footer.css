@@ -1,0 +1,52 @@
+.footer-design{
+	background-color:#111;
+	height: 200px;
+	width: 100%;
+}
+.siteinfo{
+	padding-top: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.siteinfo p{
+	color: #fff;
+	line-height: 1.6;
+}
+.siteinfo a{
+	text-decoration: none;
+	color:#fff;
+}
+.footer-menu{
+	text-align: center;
+}
+.footer-menu li a{
+	text-decoration: none;
+	color:#fff;
+	padding-top: 10px;
+}
+.footer-menu li a:hover{
+	color: #ffc107;
+}
+.footer-social{
+	text-align: center;
+}
+.footer-social a{
+	color:  #ffc107;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50% ;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.5);
+	font-size: 16px;
+	transition: 0.5s all;
+	padding: 20px;
+}
+.footer-social a:hover{
+	color:  #fff;
+}
+
+/-------------------------STICKY FOOTER ----------------------------/
+.footer {
+   position: fixed;
+   bottom: 0;
+}
